@@ -15,32 +15,112 @@
     
   </head>
   <body>
-    <!-- Navbar -->
-      <div class="navbar-fixed">
-          <nav id="nav_f" class="red darken-3" role="navigation">
-              <div class="container">
-                  <div class="nav-wrapper">
-                  <a href="#"><img src="./img/logo.png" id="logo"></a>
-                      <ul class="right hide-on-med-and-down">
-                          <li><a href="./index.html">Home</a></li>
-                          <li><a href="#work">Sobre</a></li>
-                          <li><a href="#team">Team</a></li>
-                          <li><a href="#contact">Contact</a></li>
-                      </ul>
-                      
-                  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                  </div>
+   
+    <!-- Navbar -->    
+      <!-- Navbar Mobile / Não colocar dentro  da div"navbar-fixed" pois o overlay buga. -->     
+        <ul class="sidenav" id="mobile">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <!--<li><a href="#servicos">Serviços</a></li>-->
+          <li><a href="#contato">Contato</a></li>
+        </ul> 
+
+      <!-- Navbar Fixo -->
+       <div class="navbar-fixed">
+          <nav id="nav_f" class="cyan darken-4 nav-bg" role="navigation">
+            <div class="container">
+              <div class="nav-wrapper">                    
+                <a href="#"><img src="./img/logo.png" id="logo"></a>
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="#sobre">Sobre</a></li>
+                      <!-- <li><a href="#servicos">Serviços</a></li> -->
+                      <li><a href="#contato">Contato</a></li>                         
+                  </ul>                                 
               </div>
-          </nav>
-      </div>
+            </div>
+            </nav>  
+        </div>
+       
+
+        <!-- Informações com Typed.js  -->
+        <div class="section nopadbot" id="banner-gabx" >
+          <div class="container">            
+              <h3 class="text_h center"><span class="writed"></span> </h3>            
+         </div>
+        </div>
+        <!-- Conteudo do site -->
+        
+        <div class="section white">
+            <div class="row container center">
+                <h2 class="header yellow-text text-darken-4 ">O desenvolvedor que você procura.</h2>
+                <p class="grey-text text-darken-3 lighten-3 medio">Precisa criar um site/hot-site mordeno com ótimo design responsivo? Eu sou a solução.
+                   <br /> Para entrar em contato comigo clique <a href="sobre.html" class="yellow-text text-darken-4">Aqui</a>. <br />
+                   Códigos limpos bem estruturados e indentados, qualquer entende de maneira facil!
+                 </p>
+            </div>
+        </div>
+
+        <div id="intro" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                  <div  class="col s12 m4 l4">
+                        <!-- Se precisar adicionar outro icon adicionar aqui -->
+                  </div>        
+                    
+                  <div class="col s12 m4 l4">
+                    <div class="center">
+                      <i class="large material-icons">code</i>
+                      <h5>Bootstrap e Materialize.css</h5>
+                      <p class="darken center">No momento não dominei muitas linguagens, mas estou estudando para mudar isso. Estou estudando linguagens como PHP e JavaScript.</p>
+                    </div>
+                  </div>                                        
+                </div>
+            </div>
+        </div>
+
+        <!-- Parallax -->
+        <div class="parallax-container">
+          <div class="parallax"><img src="img/parallax.png"></div>
+        </div>
+
+        <!-- Sobre -->
+        <div class="section white">
+          <div id="sobre"></div>
+            <div class="row container center">
+                <h2 class="header yellow-text text-darken-4 ">Sobre mim</h2>
+                <img class="circle responsive-img" src="img/eu.png">
+                <p class="grey-text text-darken-3 lighten-3 medio">Meu nome é Gabriel Felipe Dourado Garcez, tenho 19 anos e curso Ciência da Computação.
+                   <br /> Venho me aprofundando cada vez mais na vida de Desenvolvedor aprendendo novas linguagens fazendo cursos na <a href="http://udemy.com.br"> Udemy </a> e na <a href="http://rocketseat.com.br">Rocketseat</a> <br />
+                   
+                 </p>
+            </div>
+        </div>
+
+
+
+        
+        <!-- Footer -->
+        <footer class="page-footer cyan darken-4">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <span id="contato"></span>
+                  <h5 class="white-text">Contato</h5>
+                  <p class="grey-text text-lighten-4 center-block"><i class="material-icons middle">location_on</i> São Paulo - SP</p>
+                  <p class="grey-text text-lighten-4 center-block"><i class="material-icons middle">smartphone</i> (11) 95354-9436</p>
+                  <p class="grey-text text-lighten-4 center-block"><i class="material-icons middle">email</i> <a href="malito:gabrieldouradogarcez@gmail.com" class="yellow-text">gabrieldouradogarcez@gmail.com</a></p>
+                </div>                
+              </div>
+            </div>
+      
     
     <!-- Não tire da ordem -->
-      <script src="js/jquery.js"></script>
+      <script src="/js/jquery.js"></script>
+      <script src="js/typed.js"></script>
+      <script src="js/main.js"></script>
       <script src="js/materialize.js"></script>
-    <script>
-      $("document").ready(function(){
-        $(".button-collapse").sideNav();
-      });
-    </script>
-  </body>
+      
+    </body>
 </html>
