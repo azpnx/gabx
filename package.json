@@ -1,0 +1,24 @@
+{
+  "name": "gabx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azpnx/gabx.git"
+  },
+  "author": "Gabriel Felipe Dourado Garcez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azpnx/gabx/issues"
+  },
+  "homepage": "https://github.com/azpnx/gabx#readme",
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
